@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" role="img" aria-label="Tulip">
+  <g fill="#ff7043" stroke="#bf360c" stroke-width="2">
+    <path d="M100 40 C80 60,60 60,60 90 C60 130,140 130,140 90 C140 60,120 60,100 40 Z"/>
+    <rect x="96" y="90" width="8" height="70" fill="#2e7d32" stroke="#1b5e20"/>
+  </g>
+</svg>
