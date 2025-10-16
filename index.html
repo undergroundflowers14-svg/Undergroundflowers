@@ -1,14 +1,48 @@
 <!doctype html>
 <html lang="en">
 <head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width,initial-scale=1">
-<title>Undergroundflowers — SVG Gallery</title>
-<link rel="stylesheet" href="src/styles.css">
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Undergroundflowers — Poetry Journal</title>
+  <link rel="stylesheet" href="src/styles.css" />
 </head>
-<body>
-<header><h1>Undergroundflowers — SVG Gallery</h1></header>
-<main id="gallery"></main>
-<script src="src/main.js"></script>
+<body data-owner="undergroundflowers14-svg" data-repo="Undergroundflowers">
+  <header class="site-header">
+    <h1><a href="/">Undergroundflowers</a></h1>
+    <p class="tagline">A small poetry journal — quiet, brief, underground</p>
+    <nav class="top-nav">
+      <a href="/">Home</a>
+      <a href="/pages/models.html">Models &amp; Modelling</a>
+      <a href="/pages/submit.html">Submit</a>
+      <a href="/pages/comments.html">Comments</a>
+      <a href="/pages/donate.html">Donate</a>
+      <a href="/journal/archive.html">Archive</a>
+    </nav>
+  </header>
+
+  <main class="container">
+    <section>
+      <h2>Latest Entries</h2>
+      <ul id="entries" class="entries-list">
+        <!-- Populated by src/main.js -->
+      </ul>
+    </section>
+
+    <aside>
+      <h3>About</h3>
+      <p>Undergroundflowers is a tiny journal for short poems and lyric fragments. Entries live in <code>journal/entries/</code> as Markdown files with YAML frontmatter.</p>
+      <p><a href="/submission-guidelines.md">Submission guidelines</a></p>
+    </aside>
+  </main>
+
+  <div id="touch-controls" class="touch-controls" aria-hidden="false"></div>
+
+  <footer class="site-footer">
+    <small>© undergroundflowers — undergroundflowers.art</small>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+  <script src="src/touch-buttons.js"></script>
+  <script src="src/main.js"></script>
 </body>
 </html>
